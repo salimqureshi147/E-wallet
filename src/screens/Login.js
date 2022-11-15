@@ -103,12 +103,19 @@ const Login = ({navigation}) => {
               Email
             </Text>
             <TextInput
-              style={{bottom: 16, height: 40}}
+              style={{bottom: 16, height: 40, color: '#000'}}
+              autoCapitalize={'none'}
+              placeholderTextColor={'#BFC0C2'}
               placeholder="example@gmail.com"
             />
           </View>
           <View style={inputText}>
-            <TextInput style={{height: 40}} placeholder="Password" />
+            <TextInput
+              style={{height: 40, color: '#000'}}
+              placeholder="Password"
+              placeholderTextColor={'#BFC0C2'}
+              secureTextEntry
+            />
           </View>
           <View
             style={{
@@ -138,7 +145,9 @@ const Login = ({navigation}) => {
               </Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={button}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('MyTabs')}
+            style={button}>
             <Text style={{alignSelf: 'center', color: '#F8F8F8', fontSize: 20}}>
               Login
             </Text>

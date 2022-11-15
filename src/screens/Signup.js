@@ -96,20 +96,35 @@ const Signup = ({navigation}) => {
               }}>
               Name
             </Text>
-            <TextInput style={{bottom: 16, height: 40}} placeholder="name" />
+            <TextInput
+              style={{bottom: 16, height: 40, color: '#000'}}
+              placeholder="name"
+              placeholderTextColor={'#BFC0C2'}
+            />
           </View>
           <View style={inputText}>
-            <TextInput style={{height: 40}} placeholder="Email" />
+            <TextInput
+              style={{height: 40, color: '#000'}}
+              autoCapitalize={'none'}
+              placeholder="Email"
+              placeholderTextColor={'#BFC0C2'}
+            />
           </View>
           <View style={inputText}>
-            <TextInput style={{height: 40}} placeholder="Password" />
+            <TextInput
+              style={{height: 40}}
+              placeholderTextColor={'#BFC0C2'}
+              placeholder="Password"
+            />
           </View>
           <View style={inputText}>
-            <TextInput style={{height: 40}} placeholder="Confirm Password" />
+            <TextInput
+              style={{height: 40}}
+              placeholder="Confirm Password"
+              placeholderTextColor={'#BFC0C2'}
+            />
           </View>
-          <TouchableOpacity
-            style={[button, {marginTop: 30}]}
-            onPress={() => navigation.navigate('Verify')}>
+          <TouchableOpacity style={[button, {marginTop: 30}]}>
             <Text style={{alignSelf: 'center', color: '#F8F8F8', fontSize: 20}}>
               Sign up
             </Text>

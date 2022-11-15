@@ -26,7 +26,7 @@ const Verify = ({navigation}) => {
           width: Width,
           backgroundColor: '#fff',
         }}>
-        <StatusBar backgroundColor={'#fff'} />
+        <StatusBar backgroundColor={'white'} />
         <View
           style={{
             height: '15%',
@@ -98,7 +98,9 @@ const Verify = ({navigation}) => {
             Resend code
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[button, {height: '6%', margin: 20}]}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ConfirmPassword')}
+          style={[button, {height: '6%', margin: 20}]}>
           <Text style={{alignSelf: 'center', color: '#F8F8F8', fontSize: 20}}>
             Confirm
           </Text>

@@ -12,6 +12,7 @@ const button = {
 const inputText = {
   marginTop: 10,
   height: 40,
+  color: '#000',
   width: Width - 70,
   alignSelf: 'center',
   borderWidth: 1,

@@ -16,7 +16,7 @@ import {button, inputText} from '../utilis/style';
 const Width = Dimensions.get('window').width;
 const Height = Dimensions.get('window').height;
 
-const ForgotPassword = ({navigation}) => {
+const ConfirmPassword = ({navigation}) => {
   return (
     <MyWrapper>
       <SafeAreaView
@@ -46,7 +46,7 @@ const ForgotPassword = ({navigation}) => {
               source={require('../assets/back.png')}
             />
           </TouchableOpacity>
-          <Text style={styles.boldText}>Forgot Password</Text>
+          <Text style={styles.boldText}>Confirm Password</Text>
         </View>
 
         <View
@@ -58,7 +58,7 @@ const ForgotPassword = ({navigation}) => {
           }}>
           <ImageBackground
             style={{height: '100%', width: Width}}
-            source={require('../assets/forgot.png')}
+            source={require('../assets/changepassword.png')}
             resizeMode={'contain'}></ImageBackground>
         </View>
         <Text style={{color: '#000', alignSelf: 'center', marginTop: 20}}>
@@ -72,23 +72,43 @@ const ForgotPassword = ({navigation}) => {
             style={{
               bottom: 10,
               backgroundColor: 'white',
-              width: 40,
+              width: 100,
               marginLeft: 5,
               color: '#5176C2',
               fontWeight: '600',
               textAlign: 'center',
             }}>
-            Email
+            New Password
           </Text>
           <TextInput
             style={{bottom: 16, height: 40, color: '#000'}}
             autoCapitalize={'none'}
             placeholderTextColor={'#BFC0C2'}
-            placeholder="example@gmail.com"
+            secureTextEntry
+          />
+        </View>
+        <View style={[inputText, {marginTop: 20}]}>
+          <Text
+            style={{
+              bottom: 10,
+              backgroundColor: 'white',
+              width: 150,
+              marginLeft: 5,
+              color: '#5176C2',
+              fontWeight: '600',
+              textAlign: 'center',
+            }}>
+            Confirm New Password
+          </Text>
+          <TextInput
+            style={{bottom: 16, height: 40, color: '#000'}}
+            autoCapitalize={'none'}
+            placeholderTextColor={'#BFC0C2'}
+            secureTextEntry
           />
         </View>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Verify')}
+          onPress={() => navigation.navigate('Login')}
           style={[button, {height: '6%', margin: 40, alignItems: 'center'}]}>
           <Text style={{fontSize: 20, color: '#fff'}}>Sent</Text>
         </TouchableOpacity>
@@ -96,8 +116,7 @@ const ForgotPassword = ({navigation}) => {
     </MyWrapper>
   );
 };
-
-export default ForgotPassword;
+export default ConfirmPassword;
 
 const styles = StyleSheet.create({
   boldText: {
