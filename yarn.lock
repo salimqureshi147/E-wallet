@@ -5633,6 +5633,11 @@ range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
+react-circle-chart@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-circle-chart/-/react-circle-chart-1.0.4.tgz#60f8a1c578251c7afc01331af5cc54349a7279a2"
+  integrity sha512-HIoAuILNNISjvxTTWH22H2QSBLRsX45H+08LFW8n5DzRnTzXbGWIssoXSzFau52SVlxtHdM906QKQfRKxDke+A==
+
 react-devtools-core@4.24.0:
   version "4.24.0"
   resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.24.0.tgz#7daa196bdc64f3626b3f54f2ff2b96f7c4fdf017"

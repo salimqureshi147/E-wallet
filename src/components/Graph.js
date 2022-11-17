@@ -5,15 +5,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {DarkTheme} from '@react-navigation/native';
 const data = {
-  labels: [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thrusday',
-    'Friday',
-    'Saturday',
-    'Sunday',
-  ],
+  labels: ['Mon', 'Tue', 'Wed', 'Thru', 'Fri', 'Sat', 'Sun'],
   datasets: [
     {
       data: [20, 45, 28, 80, 99, 43],
@@ -43,13 +35,12 @@ const chartConfig = {
 };
 const Graph = () => {
   return (
-    <View style={{height: 200}}>
+    <View style={{height: 280, paddingVertical: 10}}>
       <LineChart
         style={{marginRight: -20}}
         data={data}
         width={screenWidth - 40}
         height={256}
-        verticalLabelRotation={20}
         chartConfig={chartConfig}
         withVerticalLines={false}
         withShadow={false}

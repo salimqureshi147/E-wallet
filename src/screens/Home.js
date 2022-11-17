@@ -1,10 +1,8 @@
 import {
-  Button,
   Dimensions,
   FlatList,
   Image,
   ImageBackground,
-  Pressable,
   StyleSheet,
   Text,
   TextInput,
